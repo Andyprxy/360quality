@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Generate an absolute sitemap and production canonicals with tools/finalize_seo.py
+# The admin page includes noindex; this file is not access control.
