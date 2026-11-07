@@ -1,0 +1,64 @@
+/* Dedicated, useful Pretoria service pages — visual continuity with the home page. */
+.service-page-hero{position:relative;isolation:isolate;min-height:540px;display:flex;align-items:center;background:#0e2542;color:white;overflow:hidden;padding:58px 0 72px;margin-top:0;}
+.service-page-image{position:absolute;inset:0;z-index:-2;background:url('../images/hero-quality-inspection.webp') center 54%/cover no-repeat;}
+.service-page-vignette{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,25,45,.97) 0%,rgba(12,34,61,.94) 33%,rgba(11,31,55,.51) 59%,rgba(12,33,56,.02) 100%);}
+.service-page-hero-inner{width:100%;}
+.service-page-copy{max-width:670px;}
+.service-breadcrumbs{display:flex;gap:12px;flex-wrap:wrap;color:#d3e4f3;font-size:11px;margin-bottom:51px;}
+.service-breadcrumbs a{opacity:.8;}.service-breadcrumbs a:hover{opacity:1;text-decoration:underline;}
+.service-breadcrumbs span[aria-hidden]{opacity:.4;}
+.service-eyebrow,.service-section-label{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:800;letter-spacing:.18em;color:#b6ddf5;}
+.service-eyebrow:before,.service-section-label:before{content:'';width:22px;height:1px;background:currentColor;}
+.service-page-copy h1{font:750 clamp(40px,4.45vw,66px)/1.13 var(--font-display);letter-spacing:-.062em;margin:20px 0 24px;max-width:660px;}
+.service-lead{font-size:17px;line-height:1.75;color:#e3eef7;max-width:570px;margin:0 0 27px;}
+.service-overview{display:grid;grid-template-columns:1.2fr .8fr;gap:min(8vw,110px);padding-block:100px 105px;align-items:start;}
+.service-overview-intro h2,.service-process-title h2,.service-faq h2,.service-related h2,.service-cta h2{font-size:clamp(32px,3.3vw,49px);line-height:1.17;margin:18px 0 26px;}
+.service-overview-intro>.service-section-label,.service-process .service-section-label,.service-faq .service-section-label,.service-related .service-section-label{color:#2b74a7;}
+.service-overview-intro>p{font-size:15px;color:#5c6d81;line-height:1.92;margin:0 0 18px;max-width:660px;}
+.service-note{padding:18px 21px;background:#eaf3fa;border-left:3px solid #397eaf;border-radius:0 12px 12px 0;font-size:12.5px;color:#3b5874;margin-top:30px;line-height:1.75;}
+.service-deliverables{padding:34px 30px;border-radius:22px;position:relative;top:0;}
+.service-deliverables .service-section-label{color:#2875a9;}
+.service-deliverables h2{font-size:27px;letter-spacing:-.045em;line-height:1.22;margin:17px 0 25px;}
+.service-deliverables ul{list-style:none;padding:0;margin:0;}
+.service-deliverables li{display:flex;gap:13px;align-items:flex-start;padding:13px 0;border-bottom:1px solid #e6edf4;font-size:13px;font-weight:600;color:#41536c;line-height:1.6;}
+.service-deliverables li span{display:grid;place-items:center;flex:0 0 23px;width:23px;height:23px;background:#e2f0f8;color:#2475a4;border-radius:50%;font-size:12px;}
+.service-text-link{display:inline-flex;gap:8px;color:#23689f;font-size:13px;font-weight:800;margin-top:25px;}
+.service-process{background:#e9f0f7;padding:100px 0;}.service-process-title{max-width:750px;margin-bottom:35px;}
+.service-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;}
+.service-step{background:#fff;padding:30px 26px;border-radius:20px;border:1px solid #e1e8ef;}
+.service-step>span{display:inline-block;color:#4282b0;font-size:12px;font-weight:800;margin-bottom:40px;letter-spacing:.14em;}
+.service-step h3{font:750 22px/1.2 var(--font-display);letter-spacing:-.04em;margin:0 0 14px;}
+.service-step p{font-size:13px;line-height:1.75;color:#66768a;margin:0;}
+.service-faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px;padding-block:100px;}
+.service-faq-items details{border-bottom:1px solid #d9e3ed;}
+.service-faq-items summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:15px;padding:23px 0;font-weight:750;font-size:15px;line-height:1.45;}
+.service-faq-items summary::-webkit-details-marker{display:none;}
+.service-faq-items summary>span{font-size:23px;color:#337fae;transition:transform .2s;}
+.service-faq-items details[open] summary>span{transform:rotate(45deg);}
+.service-faq-items details p{font-size:13px;line-height:1.8;color:#64768b;margin:0 0 24px;}
+.service-related{padding-bottom:96px;}
+.service-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px;}
+.related-card{min-height:164px;padding:25px;border-radius:18px;background:#fff;border:1px solid #e0e8f0;display:flex;flex-direction:column;justify-content:space-between;position:relative;box-shadow:0 6px 24px rgba(20,45,80,.025);}
+.related-card:hover{background:#eef6fc;transform:translateY(-2px);transition:transform .2s,background .2s;}
+.related-card small{color:#8595a9;font-weight:800;font-size:8.5px;letter-spacing:.16em;}
+.related-card b{font:750 21px/1.25 var(--font-display);letter-spacing:-.04em;max-width:220px;}
+.related-card>span{position:absolute;right:22px;bottom:19px;color:#4086b6;}
+.service-cta-wrap{padding-bottom:105px;}
+.service-cta{background:linear-gradient(115deg,#0c2747,#214c79);padding:59px 62px;border-radius:26px;color:#fff;display:flex;align-items:end;justify-content:space-between;gap:40px;overflow:hidden;}
+.service-cta h2{margin:14px 0 15px;}.service-cta p{margin:0;color:#d7e8f5;font-size:14px;max-width:440px;}
+.service-cta-actions{display:flex;flex-direction:column;align-items:center;gap:15px;flex:0 0 auto;}
+.service-cta-actions>a:last-child{font-size:12px;font-weight:700;color:#d3e9fa;}
+.service-footer{background:#0e233f;color:#d8e5f1;padding:60px 0 20px;}
+.service-footer-main{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:55px;}
+.service-footer-main>div{display:flex;flex-direction:column;gap:10px;}
+.service-footer-main>div>b{font-size:11px;color:#fff;letter-spacing:.15em;text-transform:uppercase;margin-bottom:5px;}
+.service-footer-main a:not(.service-footer-brand),.service-footer-main span,.service-footer-main p{font-size:12px;color:#c0d1e3;line-height:1.7;}
+.service-footer-main a:hover{color:#fff;}
+.service-footer-brand{display:flex;align-items:center;gap:12px;}
+.service-footer-brand>img{width:52px;height:52px;object-fit:contain;background:white;border-radius:10px;padding:4px;}
+.service-footer-brand>span{display:flex;flex-direction:column;line-height:1.2;color:#fff;}
+.service-footer-brand strong{font-size:17px;letter-spacing:-.04em;}.service-footer-brand small{font-size:10px;letter-spacing:.24em;}
+.service-footer-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:45px;padding-top:18px;font-size:11px;color:#9fb3c9;}
+.service-footer-bottom a{text-decoration:underline;}
+@media(max-width:960px){.service-overview{gap:33px;}.service-faq{gap:35px;}.service-page-hero{min-height:500px;}.service-page-copy{max-width:560px;}}
+@media(max-width:700px){.service-page-hero{min-height:625px;padding:55px 0 48px;align-items:end;}.service-page-image{background-position:62% center;}.service-page-vignette{background:linear-gradient(0deg,rgba(8,25,45,.98),rgba(8,25,45,.87) 48%,rgba(8,25,45,.05) 100%);}.service-breadcrumbs{margin-bottom:36px;font-size:10px;}.service-eyebrow{font-size:8.4px;}.service-page-copy h1{font-size:clamp(35px,9.3vw,51px);}.service-lead{font-size:13.8px;}.service-overview{display:block;padding-block:65px;}.service-overview-intro h2,.service-process-title h2,.service-faq h2,.service-related h2,.service-cta h2{font-size:clamp(30px,8.2vw,44px);}.service-overview-intro>p{font-size:13.2px;}.service-deliverables{margin-top:34px;padding:24px 23px;}.service-process{padding:65px 0;}.service-steps{grid-template-columns:1fr;}.service-step>span{margin-bottom:18px;}.service-faq{display:block;padding-block:66px;}.service-faq-title{margin-bottom:20px;}.service-faq-items summary{font-size:13px;}.service-related{padding-bottom:60px;}.service-related-grid{grid-template-columns:1fr;}.related-card{min-height:120px;}.service-cta-wrap{padding-bottom:60px;}.service-cta{padding:38px 28px;display:block;}.service-cta-actions{margin-top:27px;align-items:flex-start;}.service-footer-main{grid-template-columns:1fr 1fr;gap:32px 18px;}.service-footer-main>div:first-child{grid-column:1/-1;}}
