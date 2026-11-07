@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="../assets/css/admin.css">
   <script src="../assets/js/admin-pdf.js" defer></script>
   <script src="../assets/js/admin.js" defer></script>
+<script>/* Keep folder routes clean even when index.html is entered directly. */
+if (location.pathname.endsWith('/index.html')) { history.replaceState(null, '', location.pathname.replace(/index\.html$/, '') + location.search + location.hash); }
+</script>
 </head>
 <body>
   <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -38,7 +41,7 @@
   <div class="app-shell">
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <aside class="sidebar" id="sidebar">
-      <a class="side-brand" href="../index.html" title="360 Quality Solutions website">
+      <a class="side-brand" href="../" title="360 Quality Solutions website">
         <span class="side-logo"><img src="../assets/images/brand-symbol.png" alt=""></span>
         <span class="side-brand-text"><b>360 QUALITY</b><small>SOLUTIONS</small></span>
       </a>
@@ -52,7 +55,7 @@
       </nav>
       <div class="sidebar-bottom">
         <div class="side-security"><svg class="ico"><use href="#i-info"/></svg><div><b>Browser-only workspace</b><p>No login or cloud storage. Don't use on a shared device.</p></div></div>
-        <a class="side-back" href="../index.html"><svg class="ico"><use href="#i-external"/></svg> View public website</a>
+        <a class="side-back" href="../"><svg class="ico"><use href="#i-external"/></svg> View public website</a>
         <small class="side-copy">© <span id="current-year">2026</span> 360 Quality Solutions</small>
       </div>
     </aside>
