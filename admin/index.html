@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d223e">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Business Workspace | 360 Quality Solutions</title>
+  <meta name="description" content="360 Quality Solutions business workspace for preparing quotations and invoices.">
+  <link rel="icon" href="../assets/images/favicon-48.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <script src="../assets/js/admin-pdf.js" defer></script>
+  <script src="../assets/js/admin.js" defer></script>
+</head>
+<body>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-invoice" viewBox="0 0 24 24"><path d="M6 2h9l4 4v16l-3-2-4 2-4-2-4 2V4a2 2 0 0 1 2-2Z"/><path d="M14 2v5h5M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M7 8h10M7 12h5M7 16h8"/><path d="m15 15 1.5 1.5L20 13"/></symbol>
+    <symbol id="i-documents" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.3 13.8a1.8 1.8 0 0 0 .36 2l-1.8 1.8a1.8 1.8 0 0 0-2-.36 1.8 1.8 0 0 0-1 1.66v.6h-2.7v-.6a1.8 1.8 0 0 0-1-1.66 1.8 1.8 0 0 0-2 .36l-1.8-1.8a1.8 1.8 0 0 0 .36-2 1.8 1.8 0 0 0-1.66-1H5.5v-2.7h.56a1.8 1.8 0 0 0 1.66-1 1.8 1.8 0 0 0-.36-2l1.8-1.8a1.8 1.8 0 0 0 2 .36 1.8 1.8 0 0 0 1-1.66V3.5h2.7v.56a1.8 1.8 0 0 0 1 1.66 1.8 1.8 0 0 0 2-.36l1.8 1.8a1.8 1.8 0 0 0-.36 2 1.8 1.8 0 0 0 1.66 1h.56v2.7h-.56a1.8 1.8 0 0 0-1.66 1Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6v-7Z"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M4 3h13l4 4v14H3V3Z"/><path d="M7 3v6h10V3M7 21v-8h10v8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 8 10-8"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7M21 3 10 14"/><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+  </svg>
+  <div class="app-shell">
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+      <a class="side-brand" href="../index.html" title="360 Quality Solutions website">
+        <span class="side-logo"><img src="../assets/images/brand-symbol.png" alt=""></span>
+        <span class="side-brand-text"><b>360 QUALITY</b><small>SOLUTIONS</small></span>
+      </a>
+      <div class="side-mini-heading">BUSINESS WORKSPACE</div>
+      <nav class="side-nav" aria-label="Admin workspace navigation">
+        <button type="button" data-view="dashboard" class="nav-item active"><svg class="ico"><use href="#i-grid"/></svg><span>Overview</span></button>
+        <button type="button" data-view="invoice" class="nav-item"><svg class="ico"><use href="#i-invoice"/></svg><span>Invoices</span></button>
+        <button type="button" data-view="quote" class="nav-item"><svg class="ico"><use href="#i-quote"/></svg><span>Quotations</span></button>
+        <button type="button" data-view="documents" class="nav-item"><svg class="ico"><use href="#i-documents"/></svg><span>Saved documents</span><span class="side-count" id="side-count">0</span></button>
+        <button type="button" data-view="settings" class="nav-item"><svg class="ico"><use href="#i-settings"/></svg><span>Business settings</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-security"><svg class="ico"><use href="#i-info"/></svg><div><b>Browser-only workspace</b><p>No login or cloud storage. Don't use on a shared device.</p></div></div>
+        <a class="side-back" href="../index.html"><svg class="ico"><use href="#i-external"/></svg> View public website</a>
+        <small class="side-copy">© <span id="current-year">2026</span> 360 Quality Solutions</small>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left"><button type="button" class="icon-button mobile-toggle" id="mobile-toggle" aria-label="Open navigation"><svg class="ico"><use href="#i-menu"/></svg></button>
+          <div class="topbar-crumb">Workspace <span>/</span> <strong id="breadcrumb">Overview</strong></div></div>
+        <div class="topbar-actions"><span class="live-indicator"><span></span> Local workspace</span><span class="topbar-date" id="today-display"></span><button class="button button-dark top-new" id="header-new" type="button"><svg class="ico"><use href="#i-plus"/></svg><span>New document</span></button></div>
+      </header>
+      <main class="app-content">
+        <section class="page-section" id="section-dashboard" aria-labelledby="dashboard-title">
+          <div class="page-heading"><div><p class="overline">COMMAND CENTRE <span class="mid-dot">·</span> 360 QUALITY SOLUTIONS</p><h1 id="dashboard-title">Good work starts<br><em>with the details.</em></h1><p class="intro">Manage your client-facing invoices and quotations with clarity and consistency.</p></div><div class="heading-art" aria-hidden="true"><span>360</span><i></i></div></div>
+          <div class="stat-grid">
+            <article class="stat-card"><div class="stat-top"><span>Total documents</span><span class="stat-icon"><svg class="ico"><use href="#i-documents"/></svg></span></div><strong id="stat-docs">0</strong><small>Saved in this browser</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Invoiced value</span><span class="stat-icon"><svg class="ico"><use href="#i-invoice"/></svg></span></div><strong id="stat-invoiced">R 0.00</strong><small>All saved invoices</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Quoted value</span><span class="stat-icon"><svg class="ico"><use href="#i-quote"/></svg></span></div><strong id="stat-quoted">R 0.00</strong><small>All saved quotations</small></article>
+          </div>
+          <div class="dashboard-bottom"><div class="dash-panel"><div class="panel-header"><div><h2>Create a document</h2><p>Choose a professionally branded template.</p></div></div><div class="quick-cards"><button class="quick-card" id="quick-invoice" type="button"><span class="quick-icon navy"><svg class="ico"><use href="#i-invoice"/></svg></span><span class="quick-desc"><b>New invoice</b><small>Bill a client for completed work.</small></span><svg class="ico quick-arrow"><use href="#i-arrow"/></svg></button><button class="quick-card" id="quick-quote" type="button"><span class="quick-icon blue"><svg class="ico"><use href="#i-quote"/></svg></span><span class="quick-desc"><b>New quotation</b><small>Present fees, scope and terms.</small></span><svg class="ico quick-arrow"><use href="#i-arrow"/></svg></button></div></div>
+          <div class="dash-panel recent-panel"><div class="panel-header"><div><h2>Recent documents</h2><p>Pick up where you left off.</p></div><button class="text-link" type="button" data-view="documents">View all <svg class="ico"><use href="#i-arrow"/></svg></button></div><div id="recent-documents" class="recent-list"></div></div></div>
+          <div class="privacy-strip"><svg class="ico"><use href="#i-info"/></svg><span><strong>Important:</strong> Documents are saved only in this browser's local storage, not to a secure account. For production client records, connect authenticated storage and access controls.</span></div>
+        </section>
+        <section class="page-section hidden" id="section-editor" aria-labelledby="editor-title">
+          <div class="editor-top"><div><p class="overline">DOCUMENT STUDIO <span class="mid-dot">·</span> LIVE PREVIEW</p><h1 id="editor-title">Invoice studio</h1><p class="editor-subtitle" id="editor-subtitle">Craft a precise, professional document.</p></div><div class="editor-actions"><button type="button" class="button button-quiet" id="button-new"><svg class="ico"><use href="#i-plus"/></svg> New</button><button type="button" class="button button-outline" id="button-save"><svg class="ico"><use href="#i-save"/></svg> Save document</button><button type="button" class="button button-outline" id="button-print"><svg class="ico"><use href="#i-print"/></svg> Print</button><button type="button" class="button button-primary" id="button-download"><svg class="ico"><use href="#i-download"/></svg> Download PDF</button></div></div>
+          <div class="studio-layout"><div class="editor-panel" id="editor-panel">
+            <div class="panel-title-row"><div><h2>Document details</h2><p>Changes appear in the A4 preview instantly.</p></div><span class="editing-badge">EDITING</span></div>
+            <form id="document-form" novalidate>
+              <div class="form-section"><div class="form-section-header"><span class="section-index">01</span><h3>Reference &amp; client</h3></div><div class="field-grid">
+                <label class="field"><span>Document number</span><input name="number" type="text" autocomplete="off" maxlength="45" required></label>
+                <label class="field"><span>Status</span><select name="status" id="doc-status"></select></label>
+                <label class="field"><span>Issue date</span><input name="issueDate" type="date" required></label>
+                <label class="field"><span id="deadline-label">Due date</span><input name="dueDate" type="date"></label>
+                <label class="field full"><span>Client / company name</span><input name="clientName" type="text" placeholder="Client or company name" maxlength="120"></label>
+                <label class="field full"><span>Contact person (optional)</span><input name="clientContact" type="text" placeholder="Contact person's name" maxlength="120"></label>
+                <label class="field full"><span>Client email</span><input name="clientEmail" type="email" placeholder="name@company.co.za" maxlength="150"></label>
+                <label class="field full"><span>Client address</span><textarea name="clientAddress" rows="2" placeholder="Street, suburb, city, postal code" maxlength="400"></textarea></label>
+                <label class="field full"><span>Project / reference</span><input name="reference" type="text" placeholder="e.g. ISO 9001 Readiness Assessment" maxlength="180"></label>
+              </div></div>
+              <div class="form-section"><div class="form-section-header"><span class="section-index">02</span><h3>Services &amp; pricing</h3></div><div id="line-item-editors" class="line-item-editors"></div><button class="add-line" type="button" id="add-line"><svg class="ico"><use href="#i-plus"/></svg> Add line item</button></div>
+              <div class="form-section"><div class="form-section-header"><span class="section-index">03</span><h3>Adjustments</h3></div><div class="field-grid"><label class="field"><span>Discount (%)</span><input name="discountRate" type="number" step="0.01" min="0" max="100" value="0"></label><label class="field"><span>VAT rate (%)</span><input name="taxRate" type="number" step="0.01" min="0" max="100" value="0"></label></div><p class="field-tip">VAT defaults to 0%. Only add VAT if the business is VAT registered and entitled to charge it.</p></div>
+              <div class="form-section"><div class="form-section-header"><span class="section-index">04</span><h3>Notes &amp; terms</h3></div><div class="field-grid"><label class="field full"><span>Notes to client</span><textarea name="notes" rows="3" maxlength="1500" placeholder="Scope details or a message to your client"></textarea></label><label class="field full"><span id="terms-label">Terms &amp; conditions</span><textarea name="terms" rows="3" maxlength="1500"></textarea></label></div></div>
+            </form>
+            <div class="editor-bottom"><button class="button button-outline full-button" type="button" id="button-email"><svg class="ico"><use href="#i-mail"/></svg> Prepare client email</button><span>Opens your mail app. Attach the downloaded PDF yourself.</span></div>
+          </div>
+          <div class="preview-panel"><div class="preview-toolbar"><div class="preview-title"><span class="preview-pulse"></span><b>Live document preview</b><small>A4 · 210 × 297 mm</small></div><div class="preview-tools"><button type="button" class="zoom-control" id="zoom-out" aria-label="Zoom out">−</button><span id="zoom-value">100%</span><button type="button" class="zoom-control" id="zoom-in" aria-label="Zoom in">+</button></div></div>
+          <div class="paper-stage" id="paper-stage"><div class="paper-scaler" id="paper-scaler"><article id="document-page" class="document-page" aria-label="Live document preview">
+            <div class="doc-top-rule"></div><div class="doc-inner">
+              <div class="doc-head"><div class="doc-brand"><img src="../assets/images/brand-symbol.png" alt="360 Quality Solutions logo"><div><strong>360 QUALITY</strong><span>SOLUTIONS</span><small>QUALITY · COMPLIANCE · IMPROVEMENT</small></div></div><div class="doc-head-right"><span class="doc-document-type" id="preview-doc-type">INVOICE</span><b id="preview-doc-number">INV-2026-001</b><span class="doc-status" id="preview-status">DRAFT</span></div></div>
+              <div class="doc-accent-separator"><span></span></div>
+              <div class="doc-meta-row"><div class="doc-meta-block"><span class="doc-label">PREPARED FOR</span><strong id="preview-client-name">Client name</strong><p id="preview-client-contact" class="hidden"></p><p id="preview-client-email">Client email</p><p id="preview-client-address">Client address</p></div><div class="doc-meta-block doc-meta-right"><span class="doc-label">DOCUMENT DETAILS</span><div class="meta-line"><span>Issue date</span><b id="preview-issue-date"></b></div><div class="meta-line"><span id="preview-date-label">Due date</span><b id="preview-due-date"></b></div><div class="meta-line"><span>Reference</span><b id="preview-reference">—</b></div></div></div>
+              <div class="doc-line-heading"><h3 id="preview-table-heading">SERVICES &amp; FEES</h3><span>ALL AMOUNTS IN ZAR</span></div>
+              <table class="doc-line-table"><thead><tr><th>DESCRIPTION</th><th>QTY</th><th>RATE</th><th>AMOUNT</th></tr></thead><tbody id="preview-lines"></tbody></table>
+              <div class="doc-bottom-area"><div class="doc-totals-layout"><div class="doc-message"><div class="doc-message-block" id="preview-notes-box"><span class="doc-label">ADDITIONAL NOTES</span><p id="preview-notes">Thank you for considering 360 Quality Solutions.</p></div><div class="doc-message-block"><span class="doc-label" id="preview-terms-title">PAYMENT TERMS</span><p id="preview-terms"></p></div></div><div class="doc-totals"><div class="total-row"><span>Subtotal</span><b id="preview-subtotal">R 0.00</b></div><div class="total-row" id="preview-discount-row"><span id="preview-discount-title">Discount</span><b id="preview-discount">− R 0.00</b></div><div class="total-row" id="preview-tax-row"><span id="preview-tax-title">VAT</span><b id="preview-tax">R 0.00</b></div><div class="grand-total"><span id="preview-total-label">TOTAL DUE</span><strong id="preview-total">R 0.00</strong></div></div></div>
+                <div id="preview-payments" class="doc-payments"><span class="doc-label">PAYMENT INFORMATION</span><div id="preview-bank-details">Banking details provided on request.</div></div>
+                <div id="preview-acceptance" class="doc-acceptance hidden"><span>CLIENT APPROVAL</span><div class="signature-lines"><div><i></i><small>Authorised signature</small></div><div><i></i><small>Date</small></div></div></div>
+              </div>
+              <div class="doc-footer"><span id="preview-footer-address">Ditsela Place, Jan Shoba Street, Hatfield, 0028</span><span id="preview-footer-contact">shibeRR@gmail.com · +27 76 286 939</span><span class="doc-footer-tag">360QS / PROFESSIONAL SERVICES</span></div>
+            </div>
+          </article></div></div>
+          <div class="preview-hint"><svg class="ico"><use href="#i-info"/></svg> The preview mirrors your document content. PDF export uses a print-ready, searchable vector layout.</div></div>
+          </div>
+        </section>
+        <section class="page-section hidden" id="section-documents" aria-labelledby="documents-title"><div class="simple-heading"><p class="overline">YOUR FILES <span class="mid-dot">·</span> BROWSER STORAGE</p><h1 id="documents-title">Saved documents<span class="dot">.</span></h1><p>Reopen your drafts, update statuses, duplicate an existing document or download its PDF.</p></div><div class="document-list-shell"><div class="list-toolbar"><label class="search-field"><svg class="ico"><use href="#i-search"/></svg><input id="document-search" placeholder="Search by number or client" aria-label="Search documents"></label><select id="document-filter" aria-label="Filter documents"><option value="all">All documents</option><option value="invoice">Invoices</option><option value="quote">Quotations</option></select><button type="button" class="button button-dark" id="documents-new"><svg class="ico"><use href="#i-plus"/></svg> New</button></div><div id="document-list" class="document-list"></div></div><div class="privacy-strip"><svg class="ico"><use href="#i-info"/></svg> Stored locally in this browser only. Clearing browser storage can permanently remove these drafts. Download final PDFs for your records.</div></section>
+        <section class="page-section hidden" id="section-settings" aria-labelledby="settings-title"><div class="simple-heading"><p class="overline">BRAND CONTROL <span class="mid-dot">·</span> MASTER TEMPLATE</p><h1 id="settings-title">Business settings<span class="dot">.</span></h1><p>These details appear on new invoices and quotations. Only enter banking and VAT details approved by the business.</p></div><form id="settings-form" class="settings-panel"><div class="settings-identity"><div class="settings-logo"><img src="../assets/images/brand-symbol.png" alt="360 Quality Solutions logo"></div><div><strong>360 Quality Solutions</strong><p>Unified business stationery · Invoice &amp; quotation templates</p></div></div><div class="settings-block"><h2>Business identity</h2><div class="settings-grid"><label class="field"><span>Business name</span><input name="businessName" required maxlength="120"></label><label class="field"><span>Contact email</span><input name="businessEmail" type="email" maxlength="150"></label><label class="field"><span>Phone number</span><input name="businessPhone" type="tel" maxlength="50"></label><label class="field"><span>VAT registration number (optional)</span><input name="vatNumber" maxlength="50" placeholder="Leave blank unless VAT registered"></label><label class="field full"><span>Business address</span><textarea name="businessAddress" rows="2" maxlength="400"></textarea></label></div></div><div class="settings-block"><h2>Banking details <small>Optional</small></h2><div class="settings-grid"><label class="field"><span>Bank name</span><input name="bankName" maxlength="120" placeholder="Bank name"></label><label class="field"><span>Account name</span><input name="accountName" maxlength="120" placeholder="Account holder"></label><label class="field"><span>Account number</span><input name="accountNumber" maxlength="80" placeholder="Account number"></label><label class="field"><span>Branch code</span><input name="branchCode" maxlength="30" placeholder="Branch code"></label></div></div><div class="settings-footer"><button class="button button-primary" type="submit"><svg class="ico"><use href="#i-save"/></svg> Save business settings</button><span>Saved to this browser. Not synced across devices.</span></div></form></section>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
